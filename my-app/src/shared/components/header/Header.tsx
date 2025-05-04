@@ -1,4 +1,4 @@
-import { Box, Flex, Text, Button, HStack, Image } from "@chakra-ui/react";
+import { Box, Flex, Button, HStack, Image } from "@chakra-ui/react";
 import navigationLinks from "@config/navigationLinks";
 import { useUserStore } from "@store/UserStore";
 import { observer } from "mobx-react-lite";

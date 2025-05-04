@@ -95,12 +95,12 @@ const getApplicationStatusForEvent = (applications: Application[], eventId: stri
         const applications = applicationsRes;
 
         // Фильтруем заявки только пользователя и сохраняем их статусы
-        const applicationsByEvent = applications
-          .filter((a) => a.userId === userStore.user?.id)
-          .reduce((acc, curr) => {
-            acc[curr.eventId] = curr.status;
-            return acc;
-          }, {} as Record<string, ApplicationStatus>);
+        // const applicationsByEvent = applications
+        //   .filter((a) => a.userId === userStore.user?.id)
+        //   .reduce((acc, curr) => {
+        //     acc[curr.eventId] = curr.status;
+        //     return acc;
+        //   }, {} as Record<string, ApplicationStatus>);
 
           const updatedEvents = eventsData.map((event: Event) => ({
             ...event,
